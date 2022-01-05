@@ -437,19 +437,15 @@ g *{
     overflow:hidden;
     z-index: 10;
 }
-.menu li{
-    text-indent:35px;
+.menu span{
     width: 100%;
-    color: black;
     font-weight: 500;
     padding:20px 5px 20px 5px;
-    border-bottom:solid 1.25px rgba(209, 209, 209, .5); 
 }
 .menu a{
     text-indent:35px;
     width: 100%;
     color: black;
-    font-weight: 500;
     padding:20px 5px 20px 5px;
     border-bottom:solid 1.25px rgba(209, 209, 209, .5); 
     cursor: pointer;
@@ -506,7 +502,7 @@ g *{
         display: initial;
         margin-left: 10px;
     }
-    li{
+    li,a span{
         margin: 0 7px;
     }
     .hero-items{
