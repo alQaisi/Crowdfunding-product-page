@@ -58,6 +58,12 @@ closePledge.addEventListener('click',()=>{
     resetPledge();
     showOverlay(overlay,pledge);
 });
+overlay.addEventListener("click",function(evt){
+    if(evt.target==this){
+        resetPledge();
+        pledge.classList.contains('hidden')?showOverlay(overlay,thank):showOverlay(overlay,pledge);
+    }
+});
 thankBtn.addEventListener('click',()=>showOverlay(overlay,thank));
 function pledgingFunc(evt,sectionNum,idRadio){
     if(overlay.classList.contains('hidden')){
