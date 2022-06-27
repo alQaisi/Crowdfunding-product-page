@@ -8,6 +8,8 @@ html,body{
     font-family: 'Commissioner', sans-serif;
     font-size: 1rem;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 input{
     font-family: 'Commissioner', sans-serif;
@@ -415,11 +417,11 @@ g *{
     left: 0;
     bottom: 0;
     right: 0;
+    overflow-y: auto;
 }
 .overlay{
     display: grid;
     place-items: center;
-    overflow-y: scroll;
     z-index: 10000;
 }
 .menu-overlay{
